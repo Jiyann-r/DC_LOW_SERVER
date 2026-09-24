@@ -1,0 +1,11 @@
+{
+  "name": "roblox-server-feeder",
+  "version": "1.0.0",
+  "description": "24/7 Independent Roblox Low-Player Server Feeder for Discord",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {}
+}

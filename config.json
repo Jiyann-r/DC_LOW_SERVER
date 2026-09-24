@@ -1,0 +1,13 @@
+{
+  "refreshInterval": 15,
+  "customJoinRedirect": "https://jocular-jalebi-e9fb5d.netlify.app/",
+  "port": 3000,
+  "games": [
+    {
+      "placeId": 107778070777162,
+      "name": "Steal an Egg",
+      "targetMaxPlayers": 2,
+      "maxServersToDisplay": 10
+    }
+  ]
+}

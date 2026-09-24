@@ -1,0 +1,12 @@
+# Environment Variables (Contains sensitive secrets like Webhooks)
+.env
+.env.local
+
+# State file (contains Discord Message IDs created at runtime)
+state.json
+
+# Node modules & OS junk
+node_modules/
+npm-debug.log
+.DS_Store
+Thumbs.db
