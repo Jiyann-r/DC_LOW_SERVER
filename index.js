@@ -195,7 +195,7 @@ async function fetchGameServers(gameConfig) {
 
         fields.push({
           name: `Server #${i + 1}  •  ${srv.playing}/${srv.maxPlayers} Players  •  ${pingStr}ms`,
-          value: `### [❯ Click to Auto Join Server](${joinLink})\n> \`game:GetService('TeleportService'):TeleportToPlaceInstance(${placeId}, '${srv.id}')\``,
+          value: `[**__❯ CLICK TO AUTO JOIN SERVER ❮__**](${joinLink})\n> \`game:GetService('TeleportService'):TeleportToPlaceInstance(${placeId}, '${srv.id}')\``,
           inline: false
         });
       }
