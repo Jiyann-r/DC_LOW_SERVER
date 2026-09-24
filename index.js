@@ -207,13 +207,11 @@ async function fetchGameServers(gameConfig) {
       });
     }
 
-    const currentMsgId = state[String(placeId)] || '';
-    const offlineLink = `${config.customJoinRedirect}offline.html?msgId=${currentMsgId}`;
     const nowUnix = Math.floor(Date.now() / 1000);
 
     const embed = {
       title: `Live Servers: ${gameName}`,
-      description: `**Status:** \`ONLINE\`\n**Heartbeat:** <t:${nowUnix}:R>\n\nTracking top servers (≤ ${targetMaxPlayers} players), prioritized by ping.\n\n[Admin: Mark Offline](${offlineLink})`,
+      description: `**Status:** \`ONLINE\`\n**Heartbeat:** <t:${nowUnix}:R>\n\nTracking top servers (≤ ${targetMaxPlayers} players), prioritized by ping.`,
       color: 2336089, // Discord Online Green (0x23A559)
       fields: fields,
       footer: { text: `Jiyan's Independent Tracker • Refreshes every ${config.refreshInterval}s` },
