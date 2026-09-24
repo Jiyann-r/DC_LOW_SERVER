@@ -194,8 +194,8 @@ async function fetchGameServers(gameConfig) {
         const joinLink = `${config.customJoinRedirect}?placeId=${placeId}&jobId=${srv.id}`;
 
         fields.push({
-          name: `Server #${i + 1}  |  ${srv.playing} / ${srv.maxPlayers} Players  |  ${pingStr}ms`,
-          value: `[ ❯ 1-Click Auto Join ](${joinLink})\n*Or manually execute in executor:*\n\`\`\`lua\ngame:GetService('TeleportService'):TeleportToPlaceInstance(${placeId}, '${srv.id}')\n\`\`\``,
+          name: `Server #${i + 1}  •  ${srv.playing}/${srv.maxPlayers} Players  •  ${pingStr}ms`,
+          value: `### [❯ Click to Auto Join Server](${joinLink})\n> \`game:GetService('TeleportService'):TeleportToPlaceInstance(${placeId}, '${srv.id}')\``,
           inline: false
         });
       }
