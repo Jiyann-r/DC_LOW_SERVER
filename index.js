@@ -171,7 +171,7 @@ async function fetchGameServers(gameConfig) {
 
     if (data && Array.isArray(data.data)) {
       for (const srv of data.data) {
-        if (srv.id && typeof srv.playing === 'number' && srv.playing <= targetMaxPlayers) {
+        if (srv.id && typeof srv.playing === 'number' && srv.playing > 0 && srv.playing <= targetMaxPlayers) {
           validServers.push(srv);
         }
       }
