@@ -6,7 +6,7 @@
     {
       "placeId": 107778070777162,
       "name": "Steal an Egg",
-      "targetMaxPlayers": 2,
+      "targetMaxPlayers": 4,
       "maxServersToDisplay": 10
     }
   ]
